@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 250px 100px 300px;
+  gap: 1em;
+  justify-items: stretch;
+}
+
+.grid div {
+  background-color: antiquewhite;
+  padding: 1em;
+}
+
+.grid div:hover {
+  border: blue solid 1px;
+}
+
+.element1 {
+  align-self: start;
+}
+
+.element2 {
+  align-self: center;
+}
+.element3 {
+  align-self: end;
+}
+
+.element4 {
+  justify-self: start;
+}
+
+.element5 {
+  justify-self: center;
+}
+
+.element6 {
+  justify-self: end;
+}
+
+.element7 {
+  grid-column: 1/3;
+  grid-row: 3/5;
+}
+
+.element8 {
+  grid-column: 2/4;
+}
