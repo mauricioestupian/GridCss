@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 100px 100px 400px 100px;
+  grid-template-areas:
+    "h h ."
+    ". n n"
+    "m m a"
+    ". f .";
+}
+header {
+  background-color: antiquewhite;
+  grid-area: h;
+}
+nav {
+  background-color: chocolate;
+  grid-area: n;
+}
+main {
+  background-color: aqua;
+  grid-area: m;
+}
+aside {
+  background-color: blueviolet;
+  grid-area: a;
+}
+footer {
+  background-color: chartreuse;
+  grid-area: f;
+}
